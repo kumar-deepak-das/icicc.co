@@ -1,0 +1,1 @@
+<p class="sub-text-header text-center">{!!env('CONF_NAME')!!}<br/>({!!env('APP_NAME')!!})<br>({!!env('CONF_DATE')!!}, {!!env('CONF_YEAR')!!})</p>
