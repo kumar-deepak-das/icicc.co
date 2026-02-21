@@ -26,26 +26,60 @@
         <section class="content-section pt-5 pb-5 pt-xs-50 pb-xs-50">
             <div class="container py-lg-5 py-md-4 py-2">
             <div class="header-sec mx-auto text-center">
-                <h2 class="mb-2 text-center font-weight-bold">Registration</h3>
+                <h2 class="mb-2 text-center font-weight-bold">Registration</h2>
             </div>
             <div class="row mt-4">
-                <div class="col-lg-12 tabw3-left">
-                    <p style="text-justify: ;">To ensure publication of a paper in the Proceedings, at least one author has to register by submitting a normal registration fee within deadline as indicated below.</p>
-                    <table  class="table table-bordered table-striped table-striped text-center mt-5">
-                        <tr class="">
-                            <th>Registration Category</th>
-                            <th>Regular registration Fee</th>
-                        </tr>
-                        <tr>
-                            <td>Standard Authors (Industry/Academia)</td>
-                            <td>150 (USD) <b>OR</b> 10000 (INR)</td>
-                        </tr>
+
+                <div class="col-md-12">
+                    <div class="choose-left">
+                        <h3>Registration Fee</h3>
+                    </div>   
+                    
+                    
+                    <p class="py-5">To ensure publication of a paper in the Proceedings, at least one author has to register by submitting a normal registration fee within deadline as indicated below.</p>
+                      
+                    <table class="table table-hover table-bordered mt-3">
+                        <thead class="bg-theme text-white">
+                            <tr>
+                                <th>Registration Category</th>
+                                <th>Conference Mode</th>
+                                <th>Indian Author</th>
+                                <th>Foreign Author</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Authors (Academic)</td>
+                                <td>(Physical/Virtual) Mode </td>
+                                <td>200(USD) with GST</td>
+                                <td>12000(INR)</td>
+                            </tr>
+                            <tr>
+                                <td>Authors (Industry)</td>
+                                <td>(Physical/Virtual) Mode</td>
+                                <td>250(USD) with GST</td>
+                                <td>17000(INR)</td>
+                            </tr>
+                        </tbody>
                     </table>
+                    <style>
+                        .table thead th{
+                            background: var(--primary-color);
+                            color:#fff;
+                            text-align:center;
+                        }
+                        .table td, .table th{
+                            vertical-align:middle;
+                        }
+                    </style>
                 </div>
+
                 <div class="col-lg-12 tabw3-left mt-5">
-                    <H4 class="font-weight-bold">Note:</H4>
-                    <p class="my-3">Extra pages Charges apply as 30 (USD) / 1000 (INR) per page beyond 12 pages.</p>
-                    <p class="my-3">If Co-authors/ Accompanying  Guests/Listeners wish to attend the conference must have to Register with a fee of 100 (USD) / 6000 (INR).</p>
+                    <h4 class="font-weight-bold">Note:</h4>
+                    <ul class="mt-3">
+                        <li>Extra pages Charges apply as 30 (USD) / 1000 (INR) per page beyond 12 pages.</li>
+                        <li>If Co-authors/ Accompanying Guests/Listeners wish to attend the conference must have to Register with a fee of 150 (USD) / 9000 (INR).</li>
+                    </ul>
                 </div>
 
                 <div class="col-lg-12 tabw3-left">

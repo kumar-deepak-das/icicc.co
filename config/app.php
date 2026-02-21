@@ -200,6 +200,14 @@ return [
                 'Dr. Umakanta Dash, Principal & Professor, Srusti Academy of Management and Technology (Autonomous)',
             ],
         ],
+
+        [
+            'name' => 'Honorary Chair',
+            'members' => [
+                'Dr Suresh Chandra Satapathy, KIIT DU, India',
+            ],
+        ],
+
         [
             'name' => 'Organising Chair',
             'members' => [
@@ -207,12 +215,15 @@ return [
                 'Dr. Pragyan P. Sarangi, Professor, Srusti Academy of Management and Technology (Autonomous)',
             ],
         ],
+
         [
             'name' => 'Publication Chair',
             'members' => [
                 'Dr. Arpan Mohapatra, Assistant Professor, Srusti Academy of Management and Technology (Autonomous)',
+                'Dr Vikrant Bhateja, Veer Bahadur Singh Purvanchal University, India',
             ],
         ],
+
         [
             'name' => 'Advisory Committee',
             'members' => [
@@ -223,6 +234,7 @@ return [
                 'Ms. Anugya Prava Manjari, Assistant Professor, Srusti Academy of Management and Technology (Autonomous)',
             ],
         ],
+
         [
             'name' => 'Organising Committee',
             'members' => [
@@ -231,6 +243,78 @@ return [
                 'Mr. Amit Muduli, Assistant Professor, Srusti Academy of Management and Technology (Autonomous)',
                 'Ms. Kalyani Senapati, Assistant Professor, Srusti Academy of Management and Technology (Autonomous)',
                 'Ms. Rosy Barik, Assistant Professor, Srusti Academy of Management and Technology (Autonomous)',
+            ]
+        ],
+
+        [
+            'name' => 'International Advisory Committee',
+            'members' => [
+                'Dr. Rangaraj M.Rangayyan, Professor Emeritus of Electrical and Computer Engg.,University of Calgary, Alberta, Canada.',
+                'Dr. Ajay K Katangur, Professor & Head, Computer Science, Missouri State University ',
+                'Dr. Junfeng Que, Professor,Clayton State University, Atlanta, USA ',
+                'Dr. Anitesh Barua, Professor, UT, USA ',
+                'Dr. Noel Crespi, ITM University, France ',
+                'Dr. Margarita N. Favorskaya, Siberian State Aerospace university of Science and Technology, Russian federation ',
+                'Dr. Joao Manuel R. S. Tavares, Professor, University of Porto – Portugal ',
+                'Dr. Kun-lin Hsieh, NTU, Taiwan ',
+                'Dr. Ahamad J. Rusumdar, KIT, Germany ',
+                'Dr. Nitin Naik, Aston University Birmingham, UK ',
+                'Dr. Bharti Motwani, University of meryaland, USA ',
+                'Dr. V. R. Chirumamilla, EUT, Netherland ',
+                'Dr. Rafath Samrin, King Khalid University, Saudi Arabia ',
+                'Prof. Valentina. E. Balas, Senior Member IEEE, AurelVlaicu, University of Arad, Romania ',
+                'Dr. Halis Altun, MU, Turkey ',
+                'Dr. Andre Coy, The University of the West Indies Mona, Jamaica ',
+                'Dr. P.N. Suganthan, NTU, Singapore ',
+                'Dr. Mohammad Reza Daliri, Professor, IRAN ',
+                'Dr. Pawan Jain, Virginia Commonwealth University, USA ',
+                'Dr. Boka Kumsa, Wollega University, Ethiopia ',
+                'Shikha Gupta, Senior Engineer, Amazon',
+            ]
+        ],
+
+        [
+            'name' => 'National Advisory Committee',
+            'members' => [
+                'Prof. A. Govardhan, Senior Professor and Vice-Chancellor I/c., RGUKT Basar ',
+                'Dr. P Swetha, Prof., CSE, JNTUH Dr. ',
+                'G Venkata Rami Reddy, Prof. and Director Admissions, JNTUH Professor ',
+                'G R Sinha, Provost (Vice Chancellor), GSFC University ',
+                'Dr. Bunil Kumar Balabantaray, Assistant Professor at NIT Meghalaya ',
+                'Dr. N.V.S. Narasimha Sarma, Director, IIIT Trichy Dr. ',
+                'Ganpat Joshi, Professor, Dept of CSE, Madhav Unviersity, Rajasthan ',
+                'Dr. G F Ali Ahammed, CSE, VTU CPGS ',
+                'Dr. P.Lakshmi Narayana, Director, NERTU, OU,Hyd. ',
+                'Dr. T. Srinivasulu, Dean, faculty of Eng. and Technology, KU, Warangal ',
+                'Dr. P. Malla Reddy, Principal, KUCET, KU,Warangal ',
+                'Dr. E. Srinivasa Reddy, Principal, UCET, ANU, Guntur ',
+                'Dr. M. Sydulu, Professor, Dept. of EEE, NITW ',
+                'Dr. L. Anjaneyulu, Professor & Head, Dept. of ECE, NITW ',
+                'Dr. R K Bhagel, Professor, Dept. of ECE, MANIT, Bhopal ',
+                'Dr. G. Lakhmi Narayanan, Prof. & Head, ECE, NIT,Trichy ',
+                'Dr. D. Sriram Kumar, Prof., Dept. of ECE, NIT,Trichy ',
+                'Dr. P. Palany Swamy, Prof., Dept. of ECE, NIT, Trichy ',
+                'Dr. P. Chandra Shekar, Professor, Dept.of ECE, UCE, OU.Hyd ',
+                'Dr. L. Pratap Reddy, Professor, Dept. of ECE, JNTUH',
+                'Dr. K. Reddy Madhavi, Mohanbabu University, Tirupathi',
+                'Dr. M. Asharani, Professor, Dept. of ECE, JNTUH ',
+                'Dr. Ch. Srinivasa Rao, Prof., Dept. of ECE, JNTUK ',
+                'Dr. Dheeraj Sunhera, Professor, Dept. of ECE, JNTUH, Jagtiyal ',
+                'Dr. G. Sashibhushan Rao, Professor, Dept. of ECE, AU, Vizag ',
+                'Dr. P. Rajesh Kumar, Professor and Head, Dept. of ECE, AU, Vizag ',
+                'Dr. B. Anuradha, Professor, Dept. of ECE, SV University, Tirupathi ',
+                'Dr. D. Vakula, Associate Professor, Dept. of ECE., NITW ',
+                'Dr. Lalita Gupta, Associate Professor, Dept. of ECE, MANITB ',
+                'Dr. A. Subba Rao, Assistant Professor, Dept. of ECE, MANITB ',
+                'Dr. K. Bikshalu, Asst. Prof., Dept. of ECE, KU, Kothagudem ',
+                'Dr. Panyam Narahari Sastry, Professor, Dept. of ECE, CBIT, Hyd ',
+                'Dr. T. Ranga Babu, Professor & Head, Dept. of ECE, RVRJC, Guntur ',
+                'Dr. V.V.K.D.V.Prasad, Professor & Head, Dept.of ECE, GEC, AP ',
+                'Dr. Ramesh Babu Vallabhaneni, Professor, Dept. of ECE, NRIIT',
+                'Dr. V.Shankar, Professor. & Head, Dept. of CSE, KITSW ',
+                'Dr. S. Anuradha, Assoc. Professor., Dept. of ECE, NITW',
+                'Dr. T. Ramasri, Professor, Dept. of ECE, SV University, Tirupathi ',
+                'Nikhil Gunda, CEO, Digital Connect',
             ]
         ],
     ],

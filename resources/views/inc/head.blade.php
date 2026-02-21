@@ -33,23 +33,15 @@
             }
         }
 
-        p{
-            text-align: justify;
-        }
-        A{
-            color: var(--primary-color);
-        }
-        .bg-theme{
-            background-color: var(--primary-color);
-        }
-        .text-theme{
-            color: var(--primary-color);
-        }
+        p { text-align: justify; }
 
-        .fa-check-square{
-            color: #FF0000;
-        }
+        a { color: var(--primary-color); }
 
+        .bg-theme { background-color: var(--primary-color); }
+
+        .text-theme { color: var(--primary-color); }
+
+        .fa-check-square { color: #ff0000; }
 
 
     </style>
