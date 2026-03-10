@@ -42,7 +42,7 @@
                         <div>
                             <!-- <a class="btn btn-info" target="_blank" href="https://forms.gle/LzN5G5razrSf2h6RA">Submit</a> -->
                             <a class="btn btn-info" target="_blank"
-                                href="https://cmt3.research.microsoft.com/FICTA2025">Submit</a>
+                                href="">Submit</a>
                         </div>
 
                     </div>
@@ -83,6 +83,18 @@
                 <hr class="my-3">
 
                 <h2 class="mb-3"><a href="crc">Template Download Link</a></h2>
+
+
+                
+
+                <A class="text-secondary" href="public/assets/doc/Springer-Template-word.zip">
+                    <img src="public/assets/img/logo/word.png" class="mx-5 h-50 hover-red-border" />
+                </A>
+
+                <A class="text-secondary" href="public/assets/doc/Springer-Template-latex.zip">
+                    <img src="public/assets/img/logo/latex.png" class="mx-5 h-50 hover-red-border" />
+                </A>
+                
             </div>
         </section>
 
