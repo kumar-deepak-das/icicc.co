@@ -37,9 +37,9 @@
                     
                     
                     <p class="py-5">To ensure publication of a paper in the Proceedings, at least one author has to register by submitting a normal registration fee within deadline as indicated below.</p>
-                      
-                    <table class="table table-hover table-bordered mt-3">
-                        <thead class="bg-theme text-white">
+
+                    <table class="table event-table align-middle text-center table-condensed">
+                        <thead>
                             <tr>
                                 <th>Registration Category</th>
                                 <th>Conference Mode</th>
@@ -49,28 +49,89 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td> Authors (Academic)</td>
-                                <td>(Physical/Virtual) Mode </td>
-                                <td>200(USD) with GST</td>
-                                <td>12000(INR)</td>
+                                <td class="text-start">Authors (Academic)</td>
+                                <td>Physical / Virtual</td>
+                                <td>₹12,000</td>
+                                <td>$200</td>
                             </tr>
+
                             <tr>
-                                <td>Authors (Industry)</td>
-                                <td>(Physical/Virtual) Mode</td>
-                                <td>250(USD) with GST</td>
-                                <td>17000(INR)</td>
+                                <td class="text-start">Authors (Industry)</td>
+                                <td>Physical / Virtual</td>
+                                <td>₹17,000</td>
+                                <td>$250</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-start">Co-author / Listener / Guest</td>
+                                <td>Physical / Virtual</td>
+                                <td>₹8,000</td>
+                                <td>$100</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-start">Extra Page Charges</td>
+                                <td>Per page beyond 12 pages</td>
+                                <td>₹1,000</td>
+                                <td>$30</td>
                             </tr>
                         </tbody>
                     </table>
+                    
                     <style>
-                        .table thead th{
-                            background: var(--primary-color);
-                            color:#fff;
-                            text-align:center;
+                        /* SCI Table Theme */
+                        .event-table {
+                            border-radius: 12px;
+                            overflow: hidden;
+                            border: none;
+                            box-shadow: 0 8px 22px rgba(0,0,0,.08);
+                            font-size: 15px;
+                            background: #fff;
                         }
-                        .table td, .table th{
-                            vertical-align:middle;
+
+                        /* Header */
+                        .event-table thead {
+                            background: linear-gradient(90deg,#c62828,#003A66);
+                            /*background: linear-gradient(90deg,#003A66,#005fa3);*/
+                            color: #fff;
                         }
+
+                        .event-table th {
+                            padding: 15px 18px;
+                            font-weight: 600;
+                            letter-spacing: .3px;
+                            border: none;
+                        }
+
+                        /* Body */
+                        .event-table td {
+                            padding: 15px 18px;
+                            border-top: 1px solid #eee;
+                        }
+
+                        /* Hover */
+                        .event-table tbody tr:hover {
+                            background: rgba(0,58,102,0.06);
+                            transition: .25s;
+                        }
+
+                        /* Left align first column */
+                        .event-table td:first-child,
+                        .event-table th:first-child {
+                            text-align: left;
+                        }
+
+                        /* Responsive */
+                        @media (max-width: 768px) {
+                            .event-table {
+                                font-size: 12px;
+                            }
+                            .event-table th,
+                            .event-table td {
+                                padding: 10px;
+                            }
+                        }
+
                     </style>
                 </div>
 
