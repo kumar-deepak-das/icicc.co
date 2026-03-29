@@ -1,105 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Welcome to FICTA 2025 - Special Sessions</title>
-        @include('inc.head')
-    </head>
+<head>
+    @include('inc.head')
+</head>
 
-    <body>
+<body>
 
-        <header>
-            <!-- navbar navbar-expand-md navbar-dark fixed-top -->
-            
-            @include('inc/nav-bar')
-            <div class="position-relative">
-                <div class="breadcrumb-img">
-                    <div class="breadcrumb-overlay"></div>
-                    <div class="breadcrumb-slide">
-                        <div class="container text-center">
-                            <h1 class="text-header  font-weight-bold">Submission Guidelines</h1>
-                            <p class="event-color"><a href="./">Home</a> / Submission Guidelines</p>
-                            <p class="sub-text-header text-center">FICTA-2025 conference will be conducted in Hybrid mode</p>
+    @include('inc.spinner')
 
-                            @include('inc.banner-text')
+    @include('inc.nav-bar-top')
 
-                        </div>
+    @include('inc.nav-bar-sm')
+
+    @include('inc.content-top')
+
+    @include('inc.nav-bar-lg')
+
+    @include('inc.marquee')
+
+    <!-- Header Start -->
+    <!-- <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-7 mb-4 wow fadeInDown" data-wow-delay="0.1s">Submission Guidelines</h3>
+            <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="./" class="text-white">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+                <li class="breadcrumb-item active text-secondary">Submission Guidelines</li>
+            </ol>    
+        </div>
+    </div> -->
+    <!-- Header End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid pb-5 service overflow-hidden">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">{!!env('CONF_NAME')!!}</h5>
+                </div>
+                <h2 class="display-7 mb-4">Submission Guidelines</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-12 wow fadeInRight" data-wow-delay="0.3s">
+                    <h5 class="sub-title1 pe-3 my-3">Paper Submission has to be made through Microsoft CMT using the following link.</h5>
+
+                    <div class="ms-3">
+                        <A class="btn btn-primary" href="{!!env('SUBMISSION_LINK')!!}" target="_blank">Paper Submission Link</A>
+                    </div>
+                </div>
+
+                <div class="col-md-12 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="m-3">
+                        <p>All accepted and registered papers under this conference will be submitted to Springer Nature Scopus Indexed Book Series.</p>
+                    </div>
+                    <div class="m-3">
+                        <p>All submissions must comply with the Springer LNNS format:</p>
+                        <p>
+                            <A class="btn btn-secondary" target="_blank" href="https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines"> https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines</A>
+                        </p>
+                   </div>
+                   <div class="m-3">
+                        <p>Page limit for Camera Ready papers is 10-12 pages. Short papers (less than 10 pages) may not be considered.</p>
+                        <p>Before submission, Read the Springer LNNS publication ethics and guidelines<br/><A class="btn btn-secondary" target="_blank"
+                            href="https://www.springer.com/de/authors-editors/editors/publishing-ethics-for-journals/4176" target="_blank">https://www.springer.com/de/authors-editors/editors/publishing-ethics-for-journals/4176</A></p>
+                        <p>
+                        <!-- 
+                        <A class="btn btn-secondary" target="_blank" href="ftp://ftp.springernature.com/cs-proceeding/svproc/guidelines/Springer_Guidelines_for_Authors_of_Proceedings.pdf" target="_blank">ftp://ftp.springernature.com/cs-proceeding/svproc/guidelines/Springer_Guidelines_for_Authors_of_Proceedings.pdf</A></p> -->
+                    </div>
+                </div>
+
+                
+                <div class="col-md-12 wow fadeInRight" data-wow-delay="0.3s">
+                    <h5 class="sub-title1 pe-3 my-3">Template Download Link</h5>
+                    <div class="ms-3">
+                        
+                        <h6 class="ms-5 py-2"><A class="text-secondary" href="public/assets/doc/Springer-Template-latex.zip" target="_blank"> <i class="fas fa-download"></i> LaTeX Template </A></h5>
+
+                        <H6 class="ms-5 py-2"><A class="text-secondary" href="public/assets/doc/Springer-Template-word.zip" target="_blank"> <i class="fas fa-download"></i> Microsoft Word Template </A></H5>
+
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+
+         <!-- Declaration Start -->
+        <div class="container-fluid">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-12 wow fadeInUp" data-wow-delay="0.3s">
+                        <h6>Declaration:</h6>
+
+                        <p class="text-secondary mx-5"> <small>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</small></p>
                     </div>
                 </div>
             </div>
-        </header>
-        <section class="content-section pt-5 pb-5 pt-xs-50 pb-xs-50">
-            <div class="container">
-                <h2 class="mb-3">Submission Guidelines</h2>
-                <div class=row>
-                    <div class="col-12 col-md-3 col-lg-3">
-                        <img src="{{asset('public/assets/img/springer_logo.jpg')}}" alt="" class="w-100">
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
-                        <p class="fontsize-1rem">Papers may be submitted via the Online Conference Submission System through the
-                            following link<br>
-                        </p>
-                        <div>
-                            <!-- <a class="btn btn-info" target="_blank" href="https://forms.gle/LzN5G5razrSf2h6RA">Submit</a> -->
-                            <a class="btn btn-info" target="_blank"
-                                href="">Submit</a>
-                        </div>
+        </div>
+        <!-- Declaration End -->
 
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-3">
-                        <img src="{{asset('public/assets/img/springer_logo_2.jpg')}}" alt="" class="w-100">
-                    </div>
-                </div>
+    </div>
+    <!-- About End -->
+    
+    @include('inc.footer')
+    @include('inc.script')
 
-                <div class="row">
-                    <div class="col-12 col-md-3 col-lg-3"></div>
-                    <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
-                        <p class="fontsize-1rem">All accepted, presented and registered papers under this conference will be
-                            published in <a class="hyper-link" target="_blank"
-                                href="https://www.springer.com/series/8767">Springer-Smart
-                                Innovation, Systems and Technologies (SIST) Series</a> </p>
-                        <!-- <p>All accepted, presented and registered papers under this conference will be published in <a class="hyper-link" target="_blank" href="https://www.springer.com/series/8767">Springer-Smart Innovation, Systems and Technologies (SIST) Series</a> (Approved).  Now indexed by SCOPUS, EI Compendex, INSPEC, WTI Frankfurt eG, zbMATH, Japanese Science and Technology Agency (JST), SCImago, DBLP. All books published in the series are submitted for consideration in the Web of Science.</p> -->
-                        <p class="fontsize-1rem">Books published under this series are Indexed by SCOPUS, EI Compendex, INSPEC,
-                            WTI Frankfurt eG,
-                            zbMATH, Japanese Science and Technology Agency (JST), SCImago, DBLP & Web of Science.</p>
-                        <p class="fontsize-1rem">All submissions must comply with the Springer format: <a class="hyper-link"
-                                target="_blank"
-                                href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines</a>
-                        </p>
-                        <p class="font-weight-bold fontsize-1rem">Page limit for Camera Ready papers is 10-12 pages. Short
-                            papers
-                            (less
-                            than
-                            10
-                            pages) may not be considered.</p>
-                        <p class="fontsize-1rem">Before submission, <a class="hyper-link" target="_blank"
-                                href="https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines">click
-                                here to read the Springer publication ethics and guidelines.</a></p>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-3"><img src="{{asset('public/assets/img/sist.jpeg')}}" alt="" class="w-100"></div>
-                    <div class="col-12 col-md-3 col-lg-3"></div>
-                </div>
-
-                <hr class="my-3">
-
-                <h2 class="mb-3"><a href="crc">Template Download Link</a></h2>
-
-
-                
-
-                <A class="text-secondary" href="public/assets/doc/Springer-Template-word.zip">
-                    <img src="public/assets/img/logo/word.png" class="mx-5 h-50 hover-red-border" />
-                </A>
-
-                <A class="text-secondary" href="public/assets/doc/Springer-Template-latex.zip">
-                    <img src="public/assets/img/logo/latex.png" class="mx-5 h-50 hover-red-border" />
-                </A>
-                
-            </div>
-        </section>
-
-        @include('inc.footer')
-
-    </body>
+</body>
 
 </html>

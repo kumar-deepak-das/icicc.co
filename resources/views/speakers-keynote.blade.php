@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @include('inc.head')
+</head>
+
+<body>
+
+    @include('inc.spinner')
+
+    @include('inc.nav-bar-top')
+
+    @include('inc.nav-bar-sm')
+
+    @include('inc.content-top')
+
+    @include('inc.nav-bar-lg')
+
+    @include('inc.marquee')
+
+    <!-- Header Start -->
+    <!-- <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-7 mb-4 wow fadeInDown" data-wow-delay="0.1s">Keynote Speakers</h3>
+            <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="./" class="text-white">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+                <li class="breadcrumb-item active text-secondary">Keynote Speakers</li>
+            </ol>    
+        </div>
+    </div> -->
+    <!-- Header End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid service overflow-hidden">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">{!!env('CONF_NAME')!!}</h5>
+                </div>
+                <h2 class="display-7 mb-4">Keynote Speakers</h2>
+            </div>
+        </div>
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-12 py-5 wow fadeInUp" data-wow-delay="0.3s">
+                    @include('inc.avalable-soon')
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
+    @include('inc.footer')
+    @include('inc.script')
+    <script>
+    $(document).ready(function(){
+      
+      $('.ks-1').hide();
+      $(".btn-ks-1").click(function(){
+        $('.ks-1').toggle();
+        $('.btn-ks-1').toggle();
+      });
+      
+      $('.ks-2').hide();
+      $(".btn-ks-2").click(function(){
+        $('.ks-2').toggle();
+        $('.btn-ks-2').toggle();
+      });
+      
+      $('.ks-3').hide();
+      $(".btn-ks-3").click(function(){
+        $('.ks-3').toggle();
+        $('.btn-ks-3').toggle();
+      });
+      
+      $('.ks-4').hide();
+      $(".btn-ks-4").click(function(){
+        $('.ks-4').toggle();
+        $('.btn-ks-4').toggle();
+      });
+
+      $('.ks-5').hide();
+      $(".btn-ks-5").click(function(){
+        $('.ks-5').toggle();
+        $('.btn-ks-5').toggle();
+      });
+
+
+      $('.ks-6').hide();
+      $(".btn-ks-6").click(function(){
+        $('.ks-6').toggle();
+        $('.btn-ks-6').toggle();
+      });
+    });
+    </script>
+
+</body>
+
+</html>

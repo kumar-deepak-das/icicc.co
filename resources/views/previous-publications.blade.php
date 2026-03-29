@@ -1,99 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        @include('inc.head')
-    </head>
+<head>
+    @include('inc.head')
+</head>
 
-    <body>
-        
-        @include('inc.nav-bar')
+<body>
 
-        <!-- inner banner -->
-        <section class="inner-banner py-5">
-            <div class="w3l-breadcrumb py-lg-5">
-                <div class="container pt-5 pb-sm-4">
-                    <h4 class="inner-text-title font-weight-bold pt-sm-5 pt-4">Previous Publications</h4>
-                    <ul class="breadcrumbs-custom-path">
-                        <li><a href="./">Home</a></li>
-                        <li class="active"><i class="fas fa-angle-right mx-2"></i>Previous Publicationsr</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- //inner banner -->
-        
-        <section class="w3l-team py-5" id="team">
-        <div class="container py-lg-5 py-md-4 py-2">
-            <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:700px;">
-                <h5 class="small-title mb-2">{!!env('CONF_NAME')!!}</h5>
-                <h3 class="title-style">Our Publications</h3>
-            </div>
-            <div class="row text-center">
-                <div class="team-info col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div class="column position-relative mt-5">
-                        <A href="https://link.springer.com/book/9789819612666"><img src="public/assets/images/publications/2024_v2.webp" alt="" class="img-fluid" /></a>
-                    </div>
-                    <h4><A href="https://link.springer.com/book/9789819612666">{!!env('APP_NAME')!!}-2024</A></h4>
-                    <h4>Vol-II</h4>
-                </div>
+    @include('inc.spinner')
 
-                <div class="team-info col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div class="column position-relative mt-5">
-                        <A href="https://link.springer.com/book/9789819612635"><img src="public/assets/images/publications/2024_v1.webp" alt="" class="img-fluid" /></a>
-                    </div>
-                    <h4><A href="https://link.springer.com/book/9789819612635">{!!env('APP_NAME')!!}-2024</A></h4>
-                    <h4>Vol-I</h4>
-                </div>
+    @include('inc.nav-bar-top')
 
-                <div class="team-info col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div class="column position-relative mt-5">
-                        <A href="https://link.springer.com/book/10.1007/978-981-99-1588-0"><img src="public/assets/images/publications/2022.webp" alt="" class="img-fluid" /></a>
-                    </div>
-                    <h4><A href="https://link.springer.com/book/10.1007/978-981-99-1588-0">{!!env('APP_NAME')!!}-2022</A></h4>
-                </div>
+    @include('inc.nav-bar-sm')
 
-                <div class="team-info col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div class="column position-relative mt-5">
-                        <A href="https://link.springer.com/book/10.1007/978-981-19-1559-8"><img src="public/assets/images/publications/2021.webp" alt="" class="img-fluid" /></a>
-                    </div>
-                    <h4><A href="https://link.springer.com/book/10.1007/978-981-19-1559-8">{!!env('APP_NAME')!!}-2021</A></h4>
-                </div>
+    @include('inc.content-top')
 
-                <div class="team-info col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div class="column position-relative mt-5">
-                        <A href="https://link.springer.com/book/10.1007/978-981-16-0980-0"><img src="public/assets/images/publications/2020.webp" alt="" class="img-fluid" /></a>
-                    </div>
-                    <h4><A href="https://link.springer.com/book/10.1007/978-981-16-0980-0">{!!env('APP_NAME')!!}-2020</A></h4>
-                </div>
+    @include('inc.nav-bar-lg')
 
-                <div class="team-info col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div class="column position-relative mt-5">
-                        <A href="https://www.springer.com/in/book/9789811510830"><img src="public/assets/images/publications/2019.webp" alt="" class="img-fluid" /></a>
-                    </div>
-                    <h4><A href="https://www.springer.com/in/book/9789811510830">{!!env('APP_NAME')!!}-2019</A></h4>
-                </div>
+    @include('inc.marquee')
 
-                <div class="team-info col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div class="column position-relative mt-5">
-                        <A href="https://link.springer.com/book/10.1007/978-981-10-7245-1"><img src="public/assets/images/publications/2017.webp" alt="" class="img-fluid" /></a>
-                    </div>
-                    <h4><A href="https://link.springer.com/book/10.1007/978-981-10-7245-1">{!!env('APP_NAME')!!}-2017</A></h4>
-                </div>
-
-                <div class="team-info col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div class="column position-relative mt-5">
-                        <A href="https://link.springer.com/book/10.1007/978-981-10-2035-3"><img src="public/assets/images/publications/2016.webp" alt="" class="img-fluid" /></a>
-                    </div>
-                    <h4><A href="https://link.springer.com/book/10.1007/978-981-10-2035-3">{!!env('APP_NAME')!!}-2016</A></h4>
-                </div>
-
-            </div>
+    <!-- Header Start -->
+    <!-- <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-7 mb-4 wow fadeInDown" data-wow-delay="0.1s">Previous Publications</h3>
+            <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="./" class="text-white">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+                <li class="breadcrumb-item active text-secondary">Previous Publications</li>
+            </ol>    
         </div>
-    </section>
+    </div> -->
+    <!-- Header End -->
 
-        @include('inc.footer')
 
-    </body>
+    <!-- Features Start -->
+    <div class="container-fluid features overflow-hidden py-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">{!!env('CONF_NAME')!!}</h5>
+                </div>
+                <h2 class="display-7 mb-4">Previous Publications Of {!!env('APP_NAME')!!}</h2>
+            </div>
+            <div class="row g-4 justify-content-center1 text-center1">
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-3">
+                        <div class="feature-icon p-0 mb-4">
+                            <img src="public/assets/img/publications/2024_v2.webp" class="w-100">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <a  href="https://link.springer.com/book/9789819612666" target="_blank">
+                                <h5 class="mb-1">{!!env('APP_NAME')!!}-2024</h5>
+                                <h6 class="text-secondary">(Vol-II)</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-3">
+                        <div class="feature-icon p-0 mb-4">
+                            <img src="public/assets/img/publications/2024_v1.webp" class="w-100">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <a  href="https://link.springer.com/book/9789819612635" target="_blank">
+                                <h5 class="mb-1">{!!env('APP_NAME')!!}-2024</h5>
+                                <h6 class="text-secondary">(Vol-I)</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-3">
+                        <div class="feature-icon p-0 mb-4">
+                            <img src="public/assets/img/publications/2022.webp" class="w-100">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <a  href="https://link.springer.com/book/10.1007/978-981-99-1588-0" target="_blank">
+                                <h5 class="mb-1">{!!env('APP_NAME')!!}-2022</h5>
+                                <!-- <h6 class="text-secondary">(2<sup>nd</sup> Edition)</h6> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-3">
+                        <div class="feature-icon p-0 mb-4">
+                            <img src="public/assets/img/publications/2021.webp" class="w-100">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <a  href="https://link.springer.com/book/10.1007/978-981-19-1559-8" target="_blank">
+                                <h5 class="mb-1">{!!env('APP_NAME')!!}-2021</h5>
+                                <!-- <h6 class="text-secondary">(3<sup>rd</sup> Edition)</h6> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-3">
+                        <div class="feature-icon p-0 mb-4">
+                            <img src="public/assets/img/publications/2020.webp" class="w-100">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <a  href="https://link.springer.com/book/10.1007/978-981-16-0980-0" target="_blank">
+                                <h5 class="mb-1">{!!env('APP_NAME')!!}-2020</h5>
+                                <!-- <h6 class="text-secondary">(3<sup>rd</sup> Edition)</h6> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-3">
+                        <div class="feature-icon p-0 mb-4">
+                            <img src="public/assets/img/publications/2019.webp" class="w-100">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <a  href="https://www.springer.com/in/book/9789811510830" target="_blank">
+                                <h5 class="mb-1">{!!env('APP_NAME')!!}-2019</h5>
+                                <!-- <h6 class="text-secondary">(4<sup>th</sup> Edition)</h6> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-3">
+                        <div class="feature-icon p-0 mb-4">
+                            <img src="public/assets/img/publications/2017.webp" class="w-100">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <a  href="https://link.springer.com/book/10.1007/978-981-10-7245-1" target="_blank">
+                                <h5 class="mb-1">{!!env('APP_NAME')!!}-2017</h5>
+                                <!-- <h6 class="text-secondary">(5<sup>th</sup> Edition, Vol-1)</h6> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-3">
+                        <div class="feature-icon p-0 mb-4">
+                            <img src="public/assets/img/publications/2016.webp" class="w-100">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <a  href="https://link.springer.com/book/10.1007/978-981-10-2035-3" target="_blank">
+                                <h5 class="mb-1">{!!env('APP_NAME')!!}-2016</h5>
+                                <!-- <h6 class="text-secondary">(5<sup>th</sup> Edition, Vol-4)</h6> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>               
+                
+            </div>
+
+        </div>
+    </div>
+    <!-- About End -->
+    
+    @include('inc.footer')
+    @include('inc.script')
+
+</body>
 
 </html>

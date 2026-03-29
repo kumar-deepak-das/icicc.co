@@ -1,83 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        @include('inc.head')
-    </head>
+<head>
+    @include('inc.head')
+</head>
 
-    <body>
-        
-        @include('inc.nav-bar')
+<body>
 
-        <!-- inner banner -->
-        <section class="inner-banner py-5">
-            <div class="w3l-breadcrumb py-lg-5">
-                <div class="container pt-5 pb-sm-4">
-                    <h4 class="inner-text-title font-weight-bold pt-sm-5 pt-4">How to Reach</h4>
-                    <ul class="breadcrumbs-custom-path">
-                        <li><a href="./">Home</a></li>
-                        <li class="active"><i class="fas fa-angle-right mx-2"></i>How to Reach</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- //inner banner -->
-        
-        
-        <!-- contact -->
-        <section class="w3l-contact-info-main py-5" id="contact">
-            <div class="container pt-lg-5 pt-md-4 pt-2">
-                <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:700px;">
-                    <h5 class="small-title mb-1">{!!env('CONF_NAME')!!}</h5>
-                    <h3 class="title-style">How to Reach</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-5 left-cont-contact pe-md-4">
-                        <div class="contact-address p-4">
-                            <div class="contact-icon d-flex align-items-center">
-                                <i class="fas fa-home" aria-hidden="true"></i>
-                                <div class="ms-3">
-                                    <h5 class="contact-text">Host:</h5>
-                                    <h6><A target="_blank" href="!!env('CONF_HOST_URL')!!}">{!!env('CONF_HOST')!!}</A></h6>
-                                    <p>{!!env('CONF_HOST_ADD')!!}</p>
-                                </div>
-                            </div>
-                        </div>
+    @include('inc.spinner')
 
-                        <div class="contact-address p-4 mt-4">
-                            <div class="contact-icon d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                                <div class="ms-3">
-                                    <h5 class="contact-text">Venue:</h5>
-                                    <h6><A target="_blank" href="{!!env('CONF_HOST_URL')!!}">{!!env('CONF_HOST')!!}</A></h6>
-                                    <p>{!!env('CONF_HOST_ADD')!!}</p>
+    @include('inc.nav-bar-top')
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-address p-4 mt-4">
-                            <div class="contact-icon d-flex align-items-center">
-                                <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
-                                <div class="ms-3">
-                                    <h5 class="contact-text">Mail Us:</h5>
-                                    <a href="mailto:{!!env('CONF_EMAIL')!!}">{!!env('CONF_EMAIL')!!}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 right-cont-contact ps-md-4 mt-md-0 mt-5">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.6330370088317!2d85.80485347493446!3d20.34754201082767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1908e1e48a6f0f%3A0xd5d1d26ade19d88f!2sSrusti%20Academy%20of%20Management%20and%20Technology!5e1!3m2!1sen!2sin!4v1771293735842!5m2!1sen!2sin" width="100%" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
+    @include('inc.nav-bar-sm')
 
-        <div class="map-contact pt-5">
-            
+    @include('inc.content-top')
+
+    @include('inc.nav-bar-lg')
+
+    @include('inc.marquee')
+
+    <!-- Header Start -->
+    <!-- <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-7 mb-4 wow fadeInDown" data-wow-delay="0.1s">How to Reach</h3>
+            <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="./" class="text-white">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+                <li class="breadcrumb-item active text-secondary">How to Reach</li>
+            </ol>    
         </div>
-        <!-- //contact -->
+    </div> -->
+    <!-- Header End -->
+    
+        <!-- Services Start -->
+        <div class="container service py-5 overflow-hidden">
+            <div class="container">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">{!!env('CONF_NAME')!!}</h5>
+                    </div>
+                    <h2 class="display-7 mb-4">How to Reach Conference Venue</h2>
+                </div>
+            </div>
+            <div class="container ">
+                <div class="row g-5">
+                    <div class="col-md-12 wow fadeInRight" data-wow-delay="0.1s">
 
-        @include('inc.footer')
-    </body>
+                        <h5 class="display-7">Venue</h5>
+                        <h6 class="ms-3 text-secondary">{!!env('CONF_VENUE')!!}</h6>
+
+                        <h5 class="display-7 mt-4">Address</h5>
+                        <h6 class="ms-3 text-secondary">{!!env('CONF_HOST_ADD')!!}</h6>
+
+                    </div>
+                    <div class="col-md-12 wow fadeInRight" data-wow-delay="0.3s">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.6330370088317!2d85.80485347493446!3d20.34754201082767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1908e1e48a6f0f%3A0xd5d1d26ade19d88f!2sSrusti%20Academy%20of%20Management%20and%20Technology!5e1!3m2!1sen!2sin!4v1771293735842!5m2!1sen!2sin" width="100%" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    
+                       <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.2975067070074!2d78.37137229999999!3d17.5269967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8defd4fe2b81%3A0x64cfbb18950c8603!2sBVRIT%20Hyderabad%20College%20of%20Engineering%20for%20Women!5e1!3m2!1sen!2sin!4v1773505969112!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                      -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+    
+    @include('inc.footer')
+    @include('inc.script')
+
+</body>
 
 </html>

@@ -1,73 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        @include('inc.head')
-    </head>
+<head>
+    @include('inc.head')
+</head>
 
-    <body>
-        
-        @include('inc.nav-bar')
+<body>
 
-        <!-- inner banner -->
-        <section class="inner-banner py-5">
-            <div class="w3l-breadcrumb py-lg-5">
-                <div class="container pt-5 pb-sm-4">
-                    <h4 class="inner-text-title font-weight-bold pt-sm-5 pt-4">Payment Policies</h4>
-                    <ul class="breadcrumbs-custom-path">
-                        <li><a href="./">Home</a></li>
-                        <li class="active"><i class="fas fa-angle-right mx-2"></i>Payment Policies</li>
-                    </ul>
+    @include('inc.spinner')
+
+    @include('inc.nav-bar-top')
+
+    @include('inc.nav-bar-sm')
+
+    @include('inc.content-top')
+
+    @include('inc.nav-bar-lg')
+
+    @include('inc.marquee')
+
+    <!-- Header Start -->
+    <!-- <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-7 mb-4 wow fadeInDown" data-wow-delay="0.1s">Payment Policy</h3>
+            <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="./" class="text-white">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+                <li class="breadcrumb-item active text-secondary">Payment Policy</li>
+            </ol>    
+        </div>
+    </div> -->
+    <!-- Header End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid training overflow-hidden bg-light py-5">
+        <div class="container py-5">
+
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">{!!env('CONF_NAME')!!}</h5>
                 </div>
+                <h2 class="display-7 mb-4">Payment Policy</h2>
             </div>
-        </section>
-        <!-- //inner banner -->
-        
 
-        <!-- Committees -->
-        <div class="w3l-about-2 pt-5 pb-0">
-            <div class="container py-lg-51 1py-md-4 py-2">
-                <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:700px;">
-                    <h5 class="small-title mb-2">{!!env('CONF_NAME')!!}</h5>
-                    <h3 class="title-style">Payment Policies</h3>
+            <div class="row g-4">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+
+                    <h5 class="sub-title pe-3">{!!env('CONF_NAME')!!}</h5>
+                    <h3 class="display-7 mb-4">Online Registration and Payment Policy</h3>
+
+                    <p>Instructions for Author(s) Registration & Payment of Registration Fee</p>
+
+                    <ol>
+                        <li>Each paper must be at least registered by one author for presentation in the conference getting it published in Springer.</li>
+                        <li>Registration fee for each category has been defined in the above table. Registration fee can be paid by online payment transfer through the payment gateway provided. The conference registration process is handled by Newgen Research Consultancy. For registration, sharing card details will not be accepted via email.</li>
+
+                        <li>Additional Paper Registration and Co-author registration applies as mentioned in table above.</li>
+                        <li>Extra page length charges would be applicable beyond 12 pages strictly. You have to make a combined fund transfer in such a case (i.e. Normal Registration + Extra Page Charges).</li>
+                        <li>Kindly pay the conference registration fee online through the given link below.</li>
+                        <li>Paper has to be presented in the conference virtually (online) or physically (offline) based on the selected mode by the presenter and paying the applicable registration fee.</li>
+                        <li>In case of any additional or error payments made by the candidate, refunds could be processed in not less than ten working days.</li>
+                        <li>Kindly take a snapshot of the payment confirmation page while making the payment.</li>
+                        <li>Cancellation of registration without any valid reason is not permissible.</li>
+                        <li>Registration must be paid and confirmed before the deadline. We may revise our terms and conditions as per the government norms, for example to reflect changes in relevant laws or regulatory requirements or improvements.</li>
+                        <li>Authors are advised to share their grievance at <A class="text-secondary" href="mailto:{!!env('APP_EMAIL')!!}">{!!env('APP_EMAIL')!!}</A> and cc to <A class="text-secondary" href="mailto:newgenresearchconsultancy@gmail.com">newgenresearchconsultancy@gmail.com</A> along with the snapshot of the payment confirmation page (obtained while making the payment).</li>
+                    </ol>
+
+                    <h5 class="display-7 mt-5">Registration Fee (<span class="text-secondary">Physical Mode</span>):</h5>
+
+                    <p>This fee includes access to Inaugural Session, Keynotes/Invited Lectures, Oral Paper Presentation Sessions, Networking, Conference Lunch and Refreshment, Conference Kit, Participation/Presentation Certificate. The conference is non-residential and delegates are kindly requested to make their own arrangement for accommodation.</p>
+                    
+                    <h5 class="display-7 mt-5">Registration Fee (<span class="text-secondary">Online Mode</span>):</h5>
+
+                    <p>This fee includes access to Inaugural Session, Keynotes/Invited Lectures, Oral Paper Presentation Sessions in online mode, Participation/Presentation Certificate (through e-mail after the completion of conference).</p>
+
+                    <!-- <p>Registration must be paid and confirmed before the deadline. We may revise our terms and conditions as per the government norms, for example to reflect changes in relevant laws or regulatory requirements or improvements.</p> -->
                 </div>
+
             </div>
         </div>
-        
-        <section class="content-section pb-5 pt-xs-50 pb-xs-50">
-            <div class="container">
-                
-                <div class="row mt-4">
-                    <div class="col-lg-12 tabw3-left">
+    </div>
+    <!-- Gallery End -->
+    
+    @include('inc.footer')
+    @include('inc.script')
 
-                        <p class="my-2 text-darktext-justify">Instructions for Author(s) Registration & Payment of Registration Fee</p>
-
-                        <table class="table table-borderless">
-                            <tr><td><i class="far fa-check-square"></i></td><td> Each paper must be at least registered by one author for presentation in the conference getting it published in Springer.</td></tr>
-                            <tr><td><i class="far fa-check-square"></i></td><td> Registration fee for each category has been defined in the Registration Fee table. No registration will be confirmed until payment is received.</td></tr>
-                            <tr><td><i class="far fa-check-square"></i></td><td> Additional Paper Registration and Co-author registration applies as mentioned in table above.</td></tr>
-                            <tr><td><i class="far fa-check-square"></i></td><td> Kindly pay the conference registration fee through online mode.</td></tr>
-                            <tr><td><i class="far fa-check-square"></i></td><td> Paper has to be presented in the conference virtually (online) or physically (offline) based on the selected mode by the presenter and paying the applicable registration fee.</td></tr>
-                            <tr><td><i class="far fa-check-square"></i></td><td> Registration fee can be paid by Credit Card through the payment gateway provided. Credit card details will not be accepted via email.</td></tr>
-                        </table>
-                        <div class="text-danger">
-                            <H5 class="my-3 pt-3">Registration Fee (Physical Mode):</H5>
-
-                            <p class="my-2 text-dark" style="text-align: justify;">This fee includes access to Inaugural Session, Keynotes/Invited Lectures, Oral Paper Presentation Sessions, Networking, Conference Lunch and Refreshment, Conference Kit, Participation/Presentation Certificate. The conference is non-residential and delegates are kindly requested to make their own arrangement for accommodation.</p>
-
-
-                            <H5 class="my-3 pt-3">Registration Fee (Online Mode):</H5>
-
-                            <p class="my-2 text-dark" style="text-align: justify;">This fee includes access to Inaugural Session, Keynotes/Invited Lectures, Oral Paper Presentation Sessions in online mode, Participation/Presentation Certificate (through e-mail after the completion of conference).</p>
-
-                            <p class="my-2 text-dark" style="text-align: justify;">Registration must be paid and confirmed before the deadline. We may revise our terms and conditions as per the government norms, for example to reflect changes in relevant laws or regulatory requirements or improvements.</p>
-                        </div>
-                    </div>            
-                </div>
-            </div>
-        </section>
-
-        @include('inc.footer')
-    </body>
+</body>
 
 </html>

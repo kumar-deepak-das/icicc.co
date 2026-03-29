@@ -185,6 +185,11 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+    //Marquee Text
+    'marquee-text' => 'Paper Submission for ICICC-2026 is Open Now',
+
+    //Countries
+    'countries' => [],
 
      //Committees
     'committees' => [
@@ -317,6 +322,21 @@ return [
                 'Nikhil Gunda, CEO, Digital Connect',
             ]
         ],
+    ],
+
+    'past-speakers' => [
+        ['init' => 'Prof.', 'name' => 'V. Kamakshi Prasad', 'desg' => 'Senior Professor of CSE & Director of Academic and Planning (DAP), JNTU Hyderabad', 'image' => 'kamakshiprasad-1.jpg'],
+        ['init' => 'Dr.', 'name' => 'K P Supreethi', 'desg' => 'Professor and Head of the Department, JNTU Hyderabad', 'image' => 'k-p-supreethi.jpg'],
+        ['init' => 'Dr.', 'name' => 'S. C. Satapathy', 'desg' => 'Director - Doctoral Research & Publications, Professor, School of computer Engineering, KIIT (Deemed to be University) Bhubaneshwar, odisha, india', 'image' => 's.-c.-satapathy-1.jpg'],
+        ['init' => '', 'name' => 'Sukanya Konatam', 'desg' => 'Senior Manager of Enterprise Data Governance and Data Science, Vialto Partners, Texas, USA.', 'image' => 'sukanya.jpg'],
+        ['init' => 'Dr.', 'name' => 'Vikrant Bhateja', 'desg' => 'Associate Professor at Veer Bahadur Singh Purvanchal University', 'image' => 'vikrant-bhateja-1.jpg'],
+        ['init' => '', 'name' => 'Surya Prakash Nalluri', 'desg' => 'Senior Vice President, Large Financia', 'image' => 'surya-prakash.jpg'],
+    ],
+    'speakers' => [
+        ['init' => '', 'name' => '', 'desg' => '', 'image' => ''],
+        ['init' => '', 'name' => '', 'desg' => '', 'image' => ''],
+        ['init' => '', 'name' => '', 'desg' => '', 'image' => ''],
+        ['init' => '', 'name' => '', 'desg' => '', 'image' => ''],
     ],
 
 ];

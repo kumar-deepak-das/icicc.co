@@ -1,78 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        @include('inc.head')
-    </head>
+<head>
+    @include('inc.head')
+</head>
 
-    <body>
-        
-        @include('inc.nav-bar')
+<body>
 
-        <!-- inner banner -->
-        <section class="inner-banner py-5">
-            <div class="w3l-breadcrumb py-lg-5">
-                <div class="container pt-5 pb-sm-4">
-                    <h4 class="inner-text-title font-weight-bold pt-sm-5 pt-4">Session Chair</h4>
-                    <ul class="breadcrumbs-custom-path">
-                        <li><a href="./">Home</a></li>
-                        <li class="active"><i class="fas fa-angle-right mx-2"></i>Session Chair</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- //inner banner -->
-        
-        <!-- contact -->
-        <section class="w3l-contact-info-main py-5" id="contact">
-            <div class="container pt-lg-5 pt-md-4 pt-2">
-                <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:700px;">
-                    <h5 class="small-title mb-1">Get In Touch</h5>
-                    <h3 class="title-style">Contact Us</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 left-cont-contact pe-md-4">
-                        <div class="contact-address p-4">
-                            <div class="contact-icon d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                                <div class="ms-3">
-                                    <h5 class="contact-text">{!!env('CONF_HOST')!!}</h5>
-                                    <p>{!!env('CONF_HOST_ADD')!!}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="contact-address p-4 mt-4">
-                            <div class="contact-icon d-flex align-items-center">
-                                <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                                <div class="ms-3">
-                                    <h5 class="contact-text">Call Us:</h5>
-                                    <a href="tel:+12 23456790">+12 23456790</a>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="contact-address p-4 mt-4">
-                            <div class="contact-icon d-flex align-items-center">
-                                <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
-                                <div class="ms-3">
-                                    <h5 class="contact-text">Mail Us:</h5>
-                                    <a href="mailto:{!!env('CONF_EMAIL')!!}">{!!env('CONF_EMAIL')!!}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 right-cont-contact ps-md-4 mt-md-0 mt-5">
-                        <img class="img-fluid" src="public/assets/images/logo/logo-icicc-1.png">
-                    </div>
-                </div>
-            </div>
-        </section>
+    @include('inc.spinner')
 
-        <div class="map-contact pt-5">
-            
+    @include('inc.nav-bar-top')
+
+    @include('inc.nav-bar-sm')
+
+    @include('inc.content-top')
+
+    @include('inc.nav-bar-lg')
+    
+    @include('inc.marquee')
+
+    <!-- Header Start -->
+    <!-- <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-7 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h3>
+            <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="./" class="text-white">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+                <li class="breadcrumb-item active text-secondary">Contact Us</li>
+            </ol>    
         </div>
-        <!-- //contact -->
+    </div> -->
+    <!-- Header End -->
+    
+    <!-- Services Start -->
+    <div class="container-fluid service pb-5 overflow-hidden">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">{!!env('CONF_NAME')!!}</h5>
+                </div>
+                <h2 class="display-7 mb-4">Contact Us</h2>
+            </div>
+        </div>
+        <div class="container pb-5">
+        <div class="row g-4 justify-content-center">
 
-        @include('inc.footer')
-    </body>
+          <!-- Contact Card -->
+          <div class="col-lg-5 col-md-6">
+
+            <div class="contact-card h-100 p-4 text-center">
+
+              <div class="icon-circle mb-3">
+                <i class="fas fa-envelope"></i>
+              </div>
+
+              <h4 class="fw-bold mb-3">Conference Email</h4>
+              <h6 class="my-3 text-center text-secondary">For any queries related to the conference please contact the organizing team.</h6>
+              <p class="mb-2">
+                To: <a href="mailto:{!!env('APP_EMAIL')!!}" class="contact-link">
+                  {!!env('APP_EMAIL')!!}
+                </a>
+              </p>
+
+              <p>
+                Cc: <a href="mailto:{!!env('CONF_EMAIL')!!}" class="contact-link">
+                  {!!env('CONF_EMAIL')!!}
+                </a>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- About End -->
+    
+    <style>
+        .contact-section {
+          background: #f8f9fb;
+        }
+
+        .contact-card {
+          background: #ffffff;
+          border-radius: 14px;
+          box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+          transition: 0.3s;
+        }
+
+        .contact-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+        }
+
+        .icon-circle {
+          width: 60px;
+          height: 60px;
+          margin: auto;
+          border-radius: 50%;
+          background: linear-gradient(135deg,#c62828,#f9a825);
+          color: white;
+          font-size: 22px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .contact-link {
+          color: #1565c0;
+          font-weight: 600;
+          text-decoration: none;
+        }
+
+        .contact-link:hover {
+          color: #c62828;
+        }
+
+        .btn-conf-primary {
+          background: #c62828;
+          color: #fff;
+          border-radius: 30px;
+          padding: 8px 22px;
+          font-weight: 600;
+        }
+
+        .btn-conf-primary:hover {
+          background: #a61b1b;
+          color: #fff;
+        }
+
+    </style>
+
+    
+    @include('inc.footer')
+    @include('inc.script')
+
+</body>
 
 </html>
